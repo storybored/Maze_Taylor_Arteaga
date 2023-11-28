@@ -21,23 +21,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movement();
+
     }
 
     public void Movement()
     {
-        if (Input.GetKey("a"))
-        {
-            Debug.Log("Inputed the a key");
-            transform.position += Vector3.left * speed * Time.deltaTime;
-        }
-
-        if (Input.GetKey("d"))
-        {
-            Debug.Log("Inputed the d key");
-            transform.position += Vector3.right * speed * Time.deltaTime;
-        }
-
+        
         if (Input.GetKey("w"))
         {
             Debug.Log("Inputed the w key");

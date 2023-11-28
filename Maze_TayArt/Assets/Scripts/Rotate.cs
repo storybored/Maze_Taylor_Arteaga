@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 /// <summary>
 /// Arteaga, Yasmine and Taylor, Madi
 /// 11/16/23
@@ -26,7 +27,8 @@ public class Rotate : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             //transform.forward is the forward direction of an object based on where it's facing.
-            transform.position += transform.forward * Time.deltaTime * 5f;
+            transform.position += transform.right * Time.deltaTime * 5f;
         }
+
     }
 }
