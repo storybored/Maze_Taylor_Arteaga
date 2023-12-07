@@ -13,7 +13,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public int lives = 3;
-
+    public int key_count = 0;
     public float speed = 10f;
 
     // Start is called before the first frame update
@@ -28,7 +28,8 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public void Movement()
+
+        public void Movement()
     {
         
         if (Input.GetKey("w"))
@@ -62,6 +63,20 @@ public class PlayerMovement : MonoBehaviour
         {
             LoseLife();
         }
+        //print("Trigger");
 
+        //locked door code
+       else if (other.gameObject.tag == "Key")
+        {
+            key_count++;
+            print("Picked up Key: " + key_count);
+            other.gameObject.SetActive(false);
+        }
+
+        else if (other.gameObject.tag == "Oneup")
+        {
+            lives++;
+            other.gameObject.SetActive(false);
+        }
     }
 }
