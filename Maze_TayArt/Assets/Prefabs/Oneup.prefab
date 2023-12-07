@@ -431,7 +431,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4824220011194602377}
-  - component: {fileID: -3786006918550126727}
   m_Layer: 0
   m_Name: Oneup
   m_TagString: Untagged
@@ -459,18 +458,6 @@ Transform:
   - {fileID: 4252695793562542554}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-3786006918550126727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108032906948927709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66801c83c83502942ad6883a6eb2d344, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2560212816542789056
 GameObject:
   m_ObjectHideFlags: 0

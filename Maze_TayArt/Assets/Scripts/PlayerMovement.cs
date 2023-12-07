@@ -73,5 +73,10 @@ public class PlayerMovement : MonoBehaviour
             other.gameObject.SetActive(false);
         }
 
+        else if (other.gameObject.tag == "Oneup")
+        {
+            lives++;
+            other.gameObject.SetActive(false);
+        }
     }
 }
