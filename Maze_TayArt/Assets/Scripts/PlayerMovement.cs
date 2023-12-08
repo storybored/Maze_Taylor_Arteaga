@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         //Check if player has 0 lives
         if (lives == 0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 
