@@ -54,13 +54,13 @@ public class PlayerMovement : MonoBehaviour
     private void LoseLife()
     {
         lives--;
-        //bring the player back to the startPost
-        //transform.position = startPos;
+        //bring the player back to the startPos
+        transform.position = startPos;
         //Check if player has 0 lives
-        //if (lives == 0)
-        //{
-         //   SceneManager.LoadScene(1);
-        //}
+        if (lives == 0)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
