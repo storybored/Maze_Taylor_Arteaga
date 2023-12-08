@@ -16,10 +16,16 @@ public class PlayerMovement : MonoBehaviour
     public int key_count = 0;
     public float speed = 10f;
 
+    private Vector3 startPos;
+
+    private Rigidbody rigidbody;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        startPos = transform.position;
+
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -77,6 +83,13 @@ public class PlayerMovement : MonoBehaviour
         {
             lives++;
             other.gameObject.SetActive(false);
+        }
+
+        if (other.gameObject.tag == "Portal")
+        {
+            startPos = other.gameObject.GetComponent<Portal>().spawnPoint.transform.position;
+
+            transform.position = startPos;
         }
     }
 }
