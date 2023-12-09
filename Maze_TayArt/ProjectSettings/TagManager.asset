@@ -9,6 +9,7 @@ TagManager:
   - OneUp
   - Portal
   - spawnPoint
+  - Win
   layers:
   - Default
   - TransparentFX

@@ -106,6 +106,11 @@ public class PlayerMovement : MonoBehaviour
 
             transform.position = startPos;
         }
+
+        if (other.gameObject.tag == "Win")
+        {
+            SceneManager.LoadScene(4);
+        }
     }
 
     private void Attack()
