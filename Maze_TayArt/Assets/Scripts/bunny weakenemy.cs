@@ -47,32 +47,7 @@ public class bunnyweakenemy : MonoBehaviour
     {
 
         whichDirection();
-        /*if (movingLeft)
-        {
-            //once the enemy reaches the left position- going left is false.
-            if (transform.position.x <= leftPosition.x)
-            {
-                movingLeft = false;
-            }
-            else
-            {
-                //translate the enemy left by speed using Time.deltaTime
-                transform.position += Vector3.left * speed * Time.deltaTime;
-            }
-        }
-        else
-        {
-            //once the enemy reaches the right position- going left is true
-            if (transform.position.x >= rightPosition.x)
-            {
-                movingLeft = true;
-            }
-            else
-            {
-                //translate the enemy right by speed using Time.deltaTime
-                transform.position += Vector3.right * speed * Time.deltaTime;
-            }
-        }*/
+
     }
 
     //makes the enemy move left and right
