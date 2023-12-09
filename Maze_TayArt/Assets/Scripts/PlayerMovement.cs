@@ -6,14 +6,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 /// <summary>
 /// Arteaga, Yasmine and Taylor, Madi
-/// 11/16/23
+/// 12/08/23
 /// Handles the player's movement.
 /// </summary>
 
 public class PlayerMovement : MonoBehaviour
 {
+    //lives variable
     public int lives = 3;
+    //key variable
     public int key_count = 0;
+    //speed control
     public float speed = 10f;
 
     private Vector3 startPos;
@@ -34,7 +37,8 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-
+    //movement function
+    //Gives the user control of the player
         public void Movement()
     {
         
@@ -51,6 +55,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
+    //Controls the life tally
     private void LoseLife()
     {
         lives--;
@@ -63,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    //Function that controls triggered events
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enemy")

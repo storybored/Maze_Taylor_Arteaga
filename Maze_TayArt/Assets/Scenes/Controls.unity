@@ -893,8 +893,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Controls\nHold W to move.\nPress Q to turn left and E to turn Right. \nPress
-    S to turn around.\nHold (Key) to attack.\n\n"
+  m_text: "Controls:\nHold W to move.\nPress Q to turn left and E to turn Right.
+    \nPress S to turn around.\nHold R to attack.\n\nEnemies:\nDinosaur- Takes two
+    hits to go down.\nRabbit- Takes one hit to go down.\n\nAssets:\nKey- Used to
+    open the locked door.\nMushroom- Used to regain a life."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

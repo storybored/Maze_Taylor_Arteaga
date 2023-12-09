@@ -1,7 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Arteaga, Yasmine and Taylor, Madi
+/// 12/07/23
+/// Controls bunny enemy
+/// </summary>
 public class bunnyweakenemy : MonoBehaviour
 {
     //game objects to determine how far left/right enemy goes - 2

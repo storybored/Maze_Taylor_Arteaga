@@ -1,6 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/// <summary>
+/// Arteaga, Yasmine and Taylor, Madi
+/// 12/08/23
+/// Handles the portals that transfer the player between mazes
+/// </summary>
 
 public class Portal : MonoBehaviour
 {

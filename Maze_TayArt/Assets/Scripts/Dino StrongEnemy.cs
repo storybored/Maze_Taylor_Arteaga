@@ -1,6 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/// <summary>
+/// Arteaga, Yasmine and Taylor, Madi
+/// 12/07/23
+/// Controls Dinosaur enemy
+/// </summary>
 
 public class DinoStrongEnemy : MonoBehaviour
 {

@@ -17,7 +17,7 @@ using UnityEngine;
 public class lockeddoor : MonoBehaviour
 {
 
-
+    //number of locks each door requires
     public int number_of_locks;
 
 

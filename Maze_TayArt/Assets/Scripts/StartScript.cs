@@ -1,7 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;/// <summary>
+/// Arteaga, Yasmine and Taylor, Madi
+/// 12/08/23
+/// Handles scene switching
+/// </summary>
 
 public class StartScript : MonoBehaviour
 {

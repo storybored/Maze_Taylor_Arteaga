@@ -4,6 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/// <summary>
+/// Arteaga, Yasmine and Taylor, Madi
+/// 12/8/23
+/// Handles Lives UI
+/// </summary>
+
 public class UIManager : MonoBehaviour
 {
     public TMP_Text livesText;
