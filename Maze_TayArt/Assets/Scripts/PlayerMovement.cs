@@ -12,6 +12,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    private bool canAttack;
+    private bool isAttacking;
+    private bool SeenSecret;
+
     //lives variable
     public int lives = 3;
     //key variable
@@ -22,6 +27,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 startPos;
 
     private Rigidbody rigidbody;
+
+    private Material red;
+    private Material yellow;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Attack();
     }
 
     //movement function
@@ -98,5 +106,25 @@ public class PlayerMovement : MonoBehaviour
 
             transform.position = startPos;
         }
+    }
+
+    private void Attack()
+    {
+        if (Input.GetKey(KeyCode.R) && canAttack)
+        {
+            StartCoroutine(AttackMode());
+        }
+    }
+
+    public IEnumerator AttackMode()
+    {
+        canAttack = false;
+        isAttacking = true;
+        GetComponent<MeshRenderer>().material = red;
+        yield return new WaitForSeconds(1f);
+        isAttacking = false;
+        GetComponent<MeshRenderer>().material = yellow;
+        yield return new WaitForSeconds(.5f);
+        canAttack = true;
     }
 }
